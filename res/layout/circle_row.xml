@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="2dp"
+    android:layout_marginTop="2dp"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="2dp"
+        android:layout_weight="2"
+        android:background="@color/ffffff"
+        android:ems="10"
+        android:hint="09123456789"
+        android:inputType="phone"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_weight="2"
+        android:background="@color/ffffff"
+        android:ems="10"
+        android:hint="john@doe.com"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_weight="3"
+        android:background="@color/green"
+        android:onClick="addCircleRow"
+        android:maxWidth="48dp"
+        android:text="+" />
+
+</LinearLayout>
